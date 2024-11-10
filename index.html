@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration Form</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="resource/logo-tulib.png" alt="Logo" class="logo">
+    </div>
+
+    <form>
+        <h2>Membership Registration Form</h2>
+        <label for="name-th" class="required">ชื่อ (ภาษาไทย)</label>
+        <input type="text" id="name-th" name="name-th" required placeholder="ใส่ชื่อภาษาไทย">
+        
+        <label for="name-en" class="required">Name (English)</label>
+        <input type="text" id="name-en" name="name-en" required placeholder="Enter your name in English">
+
+        <label for="gender" class="required">เพศ</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="student-id" class="required">รหัสนักศึกษา</label>
+        <input type="text" id="student-id" name="student-id" required placeholder="Enter your student ID">
+
+        <label for="faculty" class="required">คณะศึกษา</label>
+        <input type="text" id="faculty" name="faculty" required placeholder="Enter your faculty">
+
+        <label for="email" class="required">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+        <label for="dob" class="required">วันเดือนปีเกิด</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="interests">ประเด็นความสนใจ</label>
+        <textarea id="interests" name="interests" rows="3" placeholder="Describe your areas of interest"></textarea>
+
+        <label class="required">ความต้องการรับข่าวสารข้อมูล</label>
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">I agree to receive information via email or phone</label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
